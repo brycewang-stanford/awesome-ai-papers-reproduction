@@ -1,6 +1,5 @@
 # Virtual environments
 checkpoints/
-dataset/
 mole_env/
 logs
 venv/
