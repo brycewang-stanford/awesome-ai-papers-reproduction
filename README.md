@@ -3,7 +3,18 @@
 [English](#englis2. **Navigate to a specific reproduction**:
 ```bash
 cd T```
-awesome-AI-papers-#### 1. MoLE (线性专家2. **进入特定复现项目**:
+awesome-AI-papers-#```
+awesome-AI-papers-reproduction/
+├── TSF_MoLE_AISTATS24_Bryce/   # 线性专家混合模型复现
+│   ├── models/                 # 核心模型实现
+│   ├── data_provider/          # 数据加载和预处理
+│   ├── scripts/               # 训练和评估脚本
+│   ├── results/               # 实验结果
+│   └── README.md              # 具体复现文档
+├── TSF_XPatch_AAAI25_Collin/  # XPatch 论文复现 (Collin版本)
+├── TSF_XPatch_AAAI25_Jerry/   # XPatch 论文复现 (Jerry版本)
+└── [未来的复现项目...]
+```E (线性专家2. **进入特定复现项目**:
 ```bash
 cd TSF_MoLE_AISTATS24型)
 - **状态**: ✅ 初始实现完成
@@ -41,12 +52,14 @@ Our reproduction process follows a systematic approach:
 
 ```
 awesome-AI-papers-reproduction/
-├── TSF_MoLE_AISTATS24/         # Mixture of Linear Experts reproduction
+├── TSF_MoLE_AISTATS24_Bryce/   # Mixture of Linear Experts reproduction
 │   ├── models/                 # Core model implementations
 │   ├── data_provider/          # Data loading and preprocessing
 │   ├── scripts/               # Training and evaluation scripts
 │   ├── results/               # Experimental results
 │   └── README.md              # Specific reproduction documentation
+├── TSF_XPatch_AAAI25_Collin/  # XPatch paper reproduction (Collin's version)
+├── TSF_XPatch_AAAI25_Jerry/   # XPatch paper reproduction (Jerry's version)
 └── [Future reproductions...]
 ```
 
@@ -56,7 +69,13 @@ awesome-AI-papers-reproduction/
 - **Status**: ✅ Initial implementation complete
 - **Dataset**: ECL (Electricity Consuming Load)
 - **Models**: DLinear, RLinear, RMLP variants
-- **Results**: Available in `TSF_MoLE_AISTATS24/results/`
+- **Results**: Available in `TSF_MoLE_AISTATS24_Bryce/results/`
+
+#### 2. XPatch (Time Series Forecasting)
+- **Status**: 📄 Paper available for reproduction
+- **Venue**: AAAI 2025
+- **Contributors**: Collin & Jerry versions
+- **Document**: Available in respective directories
 
 ### Getting Started
 
@@ -68,7 +87,7 @@ cd awesome-ai-papers-reproduction
 
 2. **Navigate to specific reproduction**:
 ```bash
-cd MoLE_reproduction
+cd TSF_MoLE_AISTATS24_Bryce
 ```
 
 3. **Install dependencies**:
@@ -137,7 +156,13 @@ awesome-AI-papers-reproduction/
 - **状态**: ✅ 初始实现完成
 - **数据集**: ECL (电力消耗负载)
 - **模型**: DLinear, RLinear, RMLP 变体
-- **结果**: 可在 `MoLE_reproduction/results/` 中查看
+- **结果**: 可在 `TSF_MoLE_AISTATS24_Bryce/results/` 中查看
+
+#### 2. XPatch (时间序列预测)
+- **状态**: 📄 论文可供复现
+- **会议**: AAAI 2025
+- **贡献者**: Collin & Jerry 版本
+- **文档**: 在各自目录中可用
 
 ### 快速开始
 
@@ -149,7 +174,7 @@ cd awesome-ai-papers-reproduction
 
 2. **进入特定复现目录**:
 ```bash
-cd MoLE_reproduction
+cd TSF_MoLE_AISTATS24_Bryce
 ```
 
 3. **安装依赖**:
