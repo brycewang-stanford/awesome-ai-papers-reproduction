@@ -1,0 +1,45 @@
+exchange_96_ema_single_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.12934713065624237, mae:0.2576446831226349
+
+exchange_96_ema_single_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.12934713065624237, mae:0.2576446831226349
+
+exchange_96_ema_single_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.08203780651092529, mae:0.1983955204486847
+
+exchange_96_ema_mps_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.12934713065624237, mae:0.2576446831226349
+
+exchange_192_ema_mps_xPatch_custom_ftM_sl96_ll48_pl192_Exp_0  
+mse:0.2044389843940735, mae:0.32346510887145996
+
+exchange_336_ema_mps_xPatch_custom_ftM_sl96_ll48_pl336_Exp_0  
+mse:0.3584255278110504, mae:0.43528997898101807
+
+exchange_720_ema_mps_xPatch_custom_ftM_sl96_ll48_pl720_Exp_0  
+mse:0.8846310377120972, mae:0.7106419801712036
+
+exchange_96_ema_unified_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.08203780651092529, mae:0.1983955204486847
+
+exchange_192_ema_unified_xPatch_custom_ftM_sl96_ll48_pl192_Exp_0  
+mse:0.17718179523944855, mae:0.29755547642707825
+
+exchange_336_ema_unified_xPatch_custom_ftM_sl96_ll48_pl336_Exp_0  
+mse:0.3487732410430908, mae:0.424472451210022
+
+exchange_720_ema_unified_xPatch_custom_ftM_sl96_ll48_pl720_Exp_0  
+mse:0.8921096324920654, mae:0.7121608853340149
+
+exchange_96_ema_unified_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.08203780651092529, mae:0.1983955204486847
+
+exchange_192_ema_unified_xPatch_custom_ftM_sl96_ll48_pl192_Exp_0  
+mse:0.17718179523944855, mae:0.29755547642707825
+
+exchange_336_ema_unified_xPatch_custom_ftM_sl96_ll48_pl336_Exp_0  
+mse:0.3487732410430908, mae:0.424472451210022
+
+exchange_720_ema_unified_xPatch_custom_ftM_sl96_ll48_pl720_Exp_0  
+mse:0.8921096324920654, mae:0.7121608853340149
+
