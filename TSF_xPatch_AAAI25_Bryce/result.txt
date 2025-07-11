@@ -1,0 +1,15 @@
+ETTh1_96_ema_xPatch_ETTh1_ftM_sl512_ll48_pl96_Exp_0  
+mse:0.3690412938594818, mae:0.39648646116256714
+
+exchange_96_reg_xPatch_custom_ftM_sl96_ll48_pl96_Exp_0  
+mse:0.08073386549949646, mae:0.19722530245780945
+
+exchange_192_reg_xPatch_custom_ftM_sl96_ll48_pl192_Exp_0  
+mse:0.1748499721288681, mae:0.29598572850227356
+
+exchange_336_reg_xPatch_custom_ftM_sl96_ll48_pl336_Exp_0  
+mse:0.34343045949935913, mae:0.421256422996521
+
+exchange_720_reg_xPatch_custom_ftM_sl96_ll48_pl720_Exp_0  
+mse:0.856787919998169, mae:0.6975865364074707
+
