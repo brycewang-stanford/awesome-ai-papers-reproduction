@@ -1,6 +1,34 @@
 # Awesome AI Papers Reproduction
 
-[English](#english) | [中文](#中文)
+[English](#englis2. **Navigate to a specific reproduction**:
+```bash
+cd T```
+awesome-AI-papers-#```
+awesome-AI-papers-reproduction/
+├── TSF_MoLE_AISTATS24_Bryce/   # 线性专家混合模型复现
+│   ├── models/                 # 核心模型实现
+│   ├── data_provider/          # 数据加载和预处理
+│   ├── scripts/               # 训练和评估脚本
+│   ├── results/               # 实验结果
+│   └── README.md              # 具体复现文档
+├── TSF_XPatch_AAAI25_Collin/  # XPatch 论文复现 (Collin版本)
+├── TSF_XPatch_AAAI25_Jerry/   # XPatch 论文复现 (Jerry版本)
+└── [未来的复现项目...]
+```E (线性专家2. **进入特定复现项目**:
+```bash
+cd TSF_MoLE_AISTATS24型)
+- **状态**: ✅ 初始实现完成
+- **数据集**: ECL (电力消耗负荷)
+- **模型**: DLinear, RLinear, RMLP 变体
+- **结果**: 可在 `TSF_MoLE_AISTATS24/results/` 中查看duction/
+├── TSF_MoLE_AISTATS24/         # 线性专家混合模型复现
+│   ├── models/                 # 核心模型实现
+│   ├── data_provider/          # 数据加载和预处理
+│   ├── scripts/               # 训练和评估脚本
+│   ├── results/               # 实验结果
+│   └── README.md              # 具体复现文档
+└── [未来的复现项目...]
+```STATS24| [中文](#中文)
 
 ---
 
@@ -113,14 +141,12 @@ bash scripts/MoE_ECL.sh
 
 ```
 awesome-AI-papers-reproduction/
-├── TSF_MoLE_AISTATS24_Bryce/   # 线性专家混合模型复现
+├── MoLE_reproduction/          # 线性专家混合模型复现
 │   ├── models/                 # 核心模型实现
 │   ├── data_provider/          # 数据加载和预处理
 │   ├── scripts/               # 训练和评估脚本
 │   ├── results/               # 实验结果
-│   └── README.md              # 具体复现文档
-├── TSF_XPatch_AAAI25_Collin/  # XPatch 论文复现 (Collin版本)
-├── TSF_XPatch_AAAI25_Jerry/   # XPatch 论文复现 (Jerry版本)
+│   └── README.md              # 特定复现文档
 └── [未来的复现项目...]
 ```
 
