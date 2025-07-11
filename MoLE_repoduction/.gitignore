@@ -2,7 +2,7 @@
 checkpoints/
 #dataset/
 mole_env/
-logs
+#logs
 venv/
 env/
 ENV/

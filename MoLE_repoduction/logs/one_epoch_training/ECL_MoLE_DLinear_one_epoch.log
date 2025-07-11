@@ -1,0 +1,76 @@
+Starting MoLE DLinear training for one epoch on ECL dataset...
+Parameters:
+SEQ_LEN: 336
+PRED_LEN: 96
+LEARNING_RATE: 0.0001
+T_DIM: 4
+HEAD_DROPOUT: 0.0
+BATCH_SIZE: 8
+SEED: 2021
+Tue Jul  8 23:34:55 PDT 2025
+Args in experiment:
+Namespace(is_training=1, model_id='ECL_MoLE_DLinear_one_epoch', model='MoLE_DLinear', data='custom', root_path='./dataset/', data_path='ECL.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/one_epoch_model/', seq_len=336, label_len=336, pred_len=96, t_dim=4, drop=0.1, disable_rev=False, chunk_size=40, fc_dropout=0.05, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, ab=2, hidden_size=1, kernel=5, groups=1, levels=3, stacks=1, embed_type=0, enc_in=321, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=1, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, train_mode=1, cut_freq=40, base_T=24, H_order=2, num_workers=0, itr=1, train_epochs=1, batch_size=8, patience=6, learning_rate=0.0001, des='One_Epoch_Training', loss='mse', lradj='type1', use_amp=False, pct_start=0.3, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False, aug_method='f_mask', aug_rate=0.0, in_batch_augmentation=True, in_dataset_augmentation=False, closer_data_aug_more=False, data_size=1, aug_data_size=1, seed=2021, wo_original_set=False, test_time_train=False, save_gating_weights=None, show_num_parameters_only=False)
+Use CPU
+>>>>>>>start training : ECL_MoLE_DLinear_one_epoch_MoLE_DLinear_custom_ftM_sl336_ll336_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_One_Epoch_Training_0_8_4_f_mask_0.0_0.0001_sd2021_hd0.0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17981
+val 2537
+test 5165
+	iters: 100, epoch: 1 | loss: 0.2693349
+	speed: 0.0358s/iter; left time: 76.9533s
+	iters: 200, epoch: 1 | loss: 0.2183085
+	speed: 0.0326s/iter; left time: 66.8484s
+	iters: 300, epoch: 1 | loss: 0.1800346
+	speed: 0.0301s/iter; left time: 58.6890s
+	iters: 400, epoch: 1 | loss: 0.1926808
+	speed: 0.0309s/iter; left time: 57.0756s
+	iters: 500, epoch: 1 | loss: 0.1928043
+	speed: 0.0305s/iter; left time: 53.3356s
+	iters: 600, epoch: 1 | loss: 0.1689555
+	speed: 0.0301s/iter; left time: 49.6743s
+	iters: 700, epoch: 1 | loss: 0.1556314
+	speed: 0.0306s/iter; left time: 47.3873s
+	iters: 800, epoch: 1 | loss: 0.1904780
+	speed: 0.0301s/iter; left time: 43.5467s
+	iters: 900, epoch: 1 | loss: 0.1350929
+	speed: 0.0302s/iter; left time: 40.7421s
+	iters: 1000, epoch: 1 | loss: 0.1440759
+	speed: 0.0301s/iter; left time: 37.5905s
+	iters: 1100, epoch: 1 | loss: 0.1312747
+	speed: 0.0300s/iter; left time: 34.4095s
+	iters: 1200, epoch: 1 | loss: 0.1771104
+	speed: 0.0301s/iter; left time: 31.5805s
+	iters: 1300, epoch: 1 | loss: 0.1284563
+	speed: 0.0301s/iter; left time: 28.5795s
+	iters: 1400, epoch: 1 | loss: 0.1454127
+	speed: 0.0302s/iter; left time: 25.6082s
+	iters: 1500, epoch: 1 | loss: 0.1413156
+	speed: 0.0303s/iter; left time: 22.6314s
+	iters: 1600, epoch: 1 | loss: 0.1605485
+	speed: 0.0315s/iter; left time: 20.3913s
+	iters: 1700, epoch: 1 | loss: 0.1326829
+	speed: 0.0304s/iter; left time: 16.6652s
+	iters: 1800, epoch: 1 | loss: 0.1203525
+	speed: 0.0305s/iter; left time: 13.6783s
+	iters: 1900, epoch: 1 | loss: 0.2148722
+	speed: 0.0305s/iter; left time: 10.6255s
+	iters: 2000, epoch: 1 | loss: 0.1420032
+	speed: 0.0302s/iter; left time: 7.4957s
+	iters: 2100, epoch: 1 | loss: 0.1441365
+	speed: 0.0302s/iter; left time: 4.4725s
+	iters: 2200, epoch: 1 | loss: 0.1777955
+	speed: 0.0303s/iter; left time: 1.4534s
+Epoch: 1 cost time: 68.59050965309143
+Epoch: 1, Steps: 2247 | Train Loss: 0.1804675 Vali Loss: 0.1260112 Test Loss: 0.1459958
+Validation loss decreased (inf --> 0.126011).  Saving model ...
+Updating learning rate to 0.0001
+>>>>>>>testing for training losses : ECL_MoLE_DLinear_one_epoch_MoLE_DLinear_custom_ftM_sl336_ll336_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_One_Epoch_Training_0_8_4_f_mask_0.0_0.0001_sd2021_hd0.0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+train 17981
+mse:0.14200052618980408, mae:0.24727119505405426, rse:0.3784523904323578
+>>>>>>>testing for vali losses : ECL_MoLE_DLinear_one_epoch_MoLE_DLinear_custom_ftM_sl336_ll336_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_One_Epoch_Training_0_8_4_f_mask_0.0_0.0001_sd2021_hd0.0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+val 2537
+mse:0.12602853775024414, mae:0.22761304676532745, rse:0.385596364736557
+>>>>>>>testing : ECL_MoLE_DLinear_one_epoch_MoLE_DLinear_custom_ftM_sl336_ll336_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_One_Epoch_Training_0_8_4_f_mask_0.0_0.0001_sd2021_hd0.0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.1459958255290985, mae:0.24969187378883362, rse:0.37980324029922485
+Training completed. Model saved in ./checkpoints/one_epoch_model/
+Log file: ./logs/one_epoch_training/ECL_MoLE_DLinear_one_epoch.log
