@@ -7,7 +7,7 @@ class Network(nn.Module):
 
         # Parameters
         self.pred_len = pred_len
-
+    
         # Non-linear Stream
         # Patching
         self.patch_len = patch_len
@@ -64,8 +64,8 @@ class Network(nn.Module):
         # s - seasonality
         # t - trend
         
-        s = s.permute(0,2,1) # to [Batch, Channel, Input]
-        t = t.permute(0,2,1) # to [Batch, Channel, Input]
+        s = s.permute(0,2,1) # to [Batch, Channel, Input] 将输入序列的维度从[Batch, Input, Channel]转换为[Batch, Channel, Input]
+        t = t.permute(0,2,1) # to [Batch, Channel, Input] 将输入序列的维度从[Batch, Input, Channel]转换为[Batch, Channel, Input]
         
         # Channel split for channel independence
         B = s.shape[0] # Batch size
@@ -78,13 +78,13 @@ class Network(nn.Module):
         # Patching
         if self.padding_patch == 'end':
             s = self.padding_patch_layer(s)
-        s = s.unfold(dimension=-1, size=self.patch_len, step=self.stride)
+        s = s.unfold(dimension=-1, size=self.patch_len, step=self.stride) ##滑动窗口，将输入序列分成多个patch
         # s: [Batch and Channel, Patch_num, Patch_len]
         
         # Patch Embedding
-        s = self.fc1(s)
-        s = self.gelu1(s)
-        s = self.bn1(s)
+        s = self.fc1(s) # [Batch and Channel, Patch_num, Patch_len] * [Patch_len, dim] -> [Batch and Channel, Patch_num, dim]
+        s = self.gelu1(s) # [Batch and Channel, Patch_num, dim]
+        s = self.bn1(s) # [Batch and Channel, Patch_num, dim]
 
         res = s
 

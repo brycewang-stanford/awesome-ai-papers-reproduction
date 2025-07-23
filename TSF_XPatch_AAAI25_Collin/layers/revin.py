@@ -19,7 +19,7 @@ class RevIN(nn.Module):
     def forward(self, x, mode:str):
         if mode == 'norm':
             self._get_statistics(x)
-            x = self._normalize(x)
+            x = self._normalize(x) 
         elif mode == 'denorm':
             x = self._denormalize(x)
         else: raise NotImplementedError

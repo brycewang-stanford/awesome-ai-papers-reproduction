@@ -15,7 +15,7 @@ class EMA(nn.Module):
         # x: [Batch, Input, Channel]
         # self.alpha.data.clamp_(0, 1)        # Clamp learnable alpha to [0, 1]
         _, t, _ = x.shape
-        powers = torch.flip(torch.arange(t, dtype=torch.double), dims=(0,))
+        powers = torch.flip(torch.arange(t, dtype=torch.float32), dims=(0,))
         weights = torch.pow((1 - self.alpha), powers).to(x.device)
         divisor = weights.clone()
         weights[1:] = weights[1:] * self.alpha

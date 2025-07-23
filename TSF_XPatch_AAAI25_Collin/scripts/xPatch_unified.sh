@@ -10,6 +10,9 @@ if [ ! -d "./logs/"$ma_type ]; then
     mkdir ./logs/$ma_type
 fi
 
+# 切换到项目根目录
+cd "$(dirname "$0")/.."
+
 model_name=xPatch
 seq_len=96
 
@@ -19,7 +22,7 @@ for pred_len in 96 192 336 720
 do
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/ETT-small/ \
     --data_path ETTh1.csv \
     --model_id ETTh1_$pred_len'_'$ma_type \
     --model $model_name \
@@ -39,7 +42,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/ETT-small/ \
     --data_path ETTh2.csv \
     --model_id ETTh2_$pred_len'_'$ma_type \
     --model $model_name \
@@ -59,7 +62,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/ETT-small/ \
     --data_path ETTm1.csv \
     --model_id ETTm1_$pred_len'_'$ma_type \
     --model $model_name \
@@ -79,7 +82,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/ETT-small/ \
     --data_path ETTm2.csv \
     --model_id ETTm2_$pred_len'_'$ma_type \
     --model $model_name \
@@ -99,7 +102,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/weather/ \
     --data_path weather.csv \
     --model_id weather_$pred_len'_'$ma_type \
     --model $model_name \
@@ -119,7 +122,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/traffic/ \
     --data_path traffic.csv \
     --model_id traffic_$pred_len'_'$ma_type \
     --model $model_name \
@@ -139,7 +142,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/electricity/ \
     --data_path electricity.csv \
     --model_id electricity_$pred_len'_'$ma_type \
     --model $model_name \
@@ -159,7 +162,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/exchange_rate/ \
     --data_path exchange_rate.csv \
     --model_id exchange_$pred_len'_'$ma_type \
     --model $model_name \
@@ -179,7 +182,7 @@ do
 
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/solar/ \
     --data_path solar.txt \
     --model_id solar_$pred_len'_'$ma_type \
     --model $model_name \
@@ -207,7 +210,7 @@ for pred_len in 24 36 48 60
 do
   python -u run.py \
     --is_training 1 \
-    --root_path ./dataset/ \
+    --root_path ./dataset/illness/  \
     --data_path national_illness.csv \
     --model_id ili_$pred_len'_'$ma_type \
     --model $model_name \
