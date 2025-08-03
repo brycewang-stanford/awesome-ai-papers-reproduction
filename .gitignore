@@ -77,3 +77,11 @@ checkpoints/
 # Results
 results/
 test_results/
+
+
+## 分项目的数据文件夹
+TSF_SparseTSF_ICML24_Bryce/dataset
+TSF_SparseTSF_ICML24_Bryce/test_results 
+TSF_SparseTSF_ICML24_Bryce/results 
+
+
