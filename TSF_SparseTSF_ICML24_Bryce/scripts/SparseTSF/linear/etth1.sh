@@ -12,7 +12,7 @@ data_name=ETTh1
 seq_len=720
 for pred_len in 96 192 336 720
 do
-  source venv/bin/activate && python3 -u run_longExp.py \
+  python -u run_longExp.py \
     --is_training 1 \
     --root_path $root_path_name \
     --data_path $data_path_name \

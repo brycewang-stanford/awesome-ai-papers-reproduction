@@ -73,6 +73,7 @@ logs/
 # Checkpoints
 checkpoints/
 *.ckpt
+*.pth 
 
 # Results
 results/

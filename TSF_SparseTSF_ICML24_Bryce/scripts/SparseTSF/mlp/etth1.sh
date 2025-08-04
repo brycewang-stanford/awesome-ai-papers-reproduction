@@ -12,7 +12,7 @@ data_name=ETTh1
 seq_len=720
 for pred_len in 96 192 336 720
 do
-  python3 -u run_longExp.py \
+  python -u run_longExp.py \
     --is_training 1 \
     --root_path $root_path_name \
     --data_path $data_path_name \
@@ -28,6 +28,6 @@ do
     --enc_in 7 \
     --train_epochs 30 \
     --patience 5 \
-    --itr 1 --batch_size 256 --learning_rate 0.002
+    --itr 1 --batch_size 256 --learning_rate 0.002 --num_workers 0
 done
 

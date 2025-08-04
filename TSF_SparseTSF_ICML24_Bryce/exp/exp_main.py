@@ -219,7 +219,9 @@ class Exp_Main(Exp_Basic):
                 print('Updating learning rate to {}'.format(scheduler.get_last_lr()[0]))
 
         best_model_path = path + '/' + 'checkpoint.pth'
-        self.model.load_state_dict(torch.load(best_model_path, map_location=self.device))
+        device = torch.device('cuda' if torch.cuda.is_available() and self.args.use_gpu else 'cpu')
+        self.model.load_state_dict(torch.load(best_model_path, map_location=device))
+
 
         return self.model
 
@@ -228,7 +230,8 @@ class Exp_Main(Exp_Basic):
 
         if test:
             print('loading model')
-            self.model.load_state_dict(torch.load(os.path.join('./checkpoints/' + setting, 'checkpoint.pth'), map_location=self.device))
+            device = torch.device('cuda' if torch.cuda.is_available() and self.args.use_gpu else 'cpu')
+            self.model.load_state_dict(torch.load(os.path.join('./checkpoints/' + setting, 'checkpoint.pth'), map_location=device))
 
         preds = []
         trues = []
@@ -328,7 +331,8 @@ class Exp_Main(Exp_Basic):
         if load:
             path = os.path.join(self.args.checkpoints, setting)
             best_model_path = path + '/' + 'checkpoint.pth'
-            self.model.load_state_dict(torch.load(best_model_path, map_location=self.device))
+            device = torch.device('cuda' if torch.cuda.is_available() and self.args.use_gpu else 'cpu')
+            self.model.load_state_dict(torch.load(best_model_path, map_location=device))
 
         preds = []
 
